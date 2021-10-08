@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Green Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <section class="header-notify">
+          <div class="container">
+            <div class="row">
+              <div class="col-9"><i class="far fa-clock header-notify__clock"></i><span class="header-notify__time">Open time: 8:00 - 18:00   Monday - Sunday</span><a class="header-notify__media" href="#"><i class="fab fa-facebook-f"></i></a><a class="header-notify__media" href="#"><i class="fab fa-twitter"></i></a><a class="header-notify__media" href="#"><i class="fab fa-tumblr"></i></a><a class="header-notify__media" href="#"><i class="fab fa-vimeo-v"></i></a>
+              </div>
+              <div class="col-3 d-flex justify-content-end align-items-center"><a class="header-notify__author" href="loginPage.html"><i class="fas fa-user"></i><span>Đăng nhập</span></a><a class="header-notify__author" href="registerPage.html"><i class="fas fa-user-plus"></i><span>Đăng ký</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="header-main">
+          <div class="container h-100">
+            <div class="row h-100 align-items-center mb-5">
+              <div class="col-12 col-lg-6 col-xl-6"><a class="header-main__logo" href="index.html"><img src="../../images/logo.png" alt="logo"></a></div>
+              <div class="col-sm-9 col-lg-4 d-none d-sm-block"><i class="fas fa-phone icon-phone"></i><span class="header-main__phone">Hỗ trợ :  (04) 6674 2332 - (04) 3786 8904</span>
+                <form class="header-main__input">
+                  <input type="text" placeholder="Tìm kiếm..."><a class="search-icon" href="#"><i class="fas fa-search"></i></a>
+                </form>
+              </div>
+              <div class="col-sm-3 col-lg-2 d-none d-sm-block"><a class="header-cart" href="cartPage.html"><i class="fas fa-cart-plus header-cart__icon"></i><span class="header-cart__quantity">0 Sản phẩm</span></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="header-nav">
+          <div class="container h-100 header-nav__content">
+            <nav class="navbar navbar-expand-lg p-0 h-100 header-nav__list">
+              <div class="navbar-collapse h-100 header-nav__item d-flex justify-content-between" id="navbarSupportedContent">
+                <input type="checkbox" id="check">
+                <label class="check-btn" for="check"><i class="fas fa-bars header-nav__icon"></i></label>
+                <div class="d-block d-sm-none"><a class="header-nav__icon" href="#"><i class="fas fa-search"></i></a><a class="header-nav__icon" href="cartPage.html"><i class="fas fa-cart-plus"></i></a></div>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active-nav"><a class="nav-link" href="index.html">TRANG CHỦ<i></i></a></li>
+                  <li class="nav-item"><a class="nav-link">GIỚI THIỆU<i></i></a></li>
+                  <li class="nav-item"><a class="nav-link">SẢN PHẨM<i class="fas fa-caret-down"></i></a></li>
+                  <li class="nav-item"><a class="nav-link" href="listProductPage.html">SẢN PHẨM MỚI<i class="fas fa-caret-down"></i></a></li>
+                  <li class="nav-item"><a class="nav-link" href="newsPage.html">TIN TỨC<i></i></a></li>
+                  <li class="nav-item"><a class="nav-link" href="contactPage.html">LIÊN HỆ<i></i></a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </section>
+        <section class="header-slide">
+          <div class="carousel slide" id="slides" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li class="active" data-target="#slides" data-slide-to="0"></li>
+              <li data-target="#slides" data-slide-to="1"></li>
+              <li data-target="#slides" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active"><img class="w-100" src="../../images/slide.jpg" alt="slide"></div>
+              <div class="carousel-item"><img class="w-100" src="../../images/slide.jpg" alt="slide"></div>
+              <div class="carousel-item"><img class="w-100" src="../../images/slide.jpg" alt="slide"></div>
+            </div>
+          </div>
+        </section>
+      </header>
+      <section class="featured-product">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <section class="product-big">
+                <div class="product__title">
+                  <h2>Sản phẩm nổi bật</h2>
+                </div>
+                <div class="product__list--big">
+                  <div class="item-big product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-1.png" alt="Cây chân chim"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                      <div class="status-new">NEW</div>
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây chân chim</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">250.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                  <div class="item-big product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-2.png" alt="Cây Dạ Lam"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                      <div class="status-percent">-50%</div>
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây Dạ Lam</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">500.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                  <div class="item-big product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-3.png" alt="Cây Danh Dự"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                      <div class="status-new">NEW</div>
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây Danh Dự</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">850.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                  <div class="item-big product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-4.png" alt="Cây cọ ta"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây cọ ta</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">150.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                  <div class="item-big product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-5.png" alt="Cây dứa nhỏ"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây dứa nhỏ</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">375.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                  <div class="item-big product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-6.png" alt="Cây đa búp đỏ"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                      <div class="status-percent">-50%</div>
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây đa búp đỏ</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">1.000.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="buys-product">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+              <section class="product-small">
+                <div class="product__title">
+                  <h2>Sản phẩm mua nhiều </h2>
+                  <div class="product__icon d-md-none d-lg-none"><a href=""> <i class="fas fa-chevron-left"></i></a><a href=""> <i class="fas fa-chevron-right"></i></a></div>
+                </div>
+                <ul class="product__list--small">
+                  <li class="item-small product-item card">
+                    <div class="row mr-0 ml-0">
+                      <div class="col-5 pr-0 pl-0">
+                        <div class="item-small__img"><a href="#"><img src="../../images/product-1.png" alt="Cây chân chim"/></a></div>
+                      </div>
+                      <div class="col-7">
+                        <div class="item__detail">
+                          <div class="item-name">Cây chân chim</div>
+                          <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="item-price"><span class="item-price__discount">250.000 đ</span><span class="item-price__internal"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-small product-item card">
+                    <div class="row mr-0 ml-0">
+                      <div class="col-5 pr-0 pl-0">
+                        <div class="item-small__img"><a href="#"><img src="../../images/product-2.png" alt="Cây Dạ Lam"/></a></div>
+                      </div>
+                      <div class="col-7">
+                        <div class="item__detail">
+                          <div class="item-name">Cây Dạ Lam</div>
+                          <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="item-price"><span class="item-price__discount">500.000 đ</span><span class="item-price__internal"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-small product-item card">
+                    <div class="row mr-0 ml-0">
+                      <div class="col-5 pr-0 pl-0">
+                        <div class="item-small__img"><a href="#"><img src="../../images/product-3.png" alt="Cây Danh Dự"/></a></div>
+                      </div>
+                      <div class="col-7">
+                        <div class="item__detail">
+                          <div class="item-name">Cây Danh Dự</div>
+                          <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="item-price"><span class="item-price__discount">850.000 đ</span><span class="item-price__internal"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-small product-item card">
+                    <div class="row mr-0 ml-0">
+                      <div class="col-5 pr-0 pl-0">
+                        <div class="item-small__img"><a href="#"><img src="../../images/product-4.png" alt="Cây cọ ta"/></a></div>
+                      </div>
+                      <div class="col-7">
+                        <div class="item__detail">
+                          <div class="item-name">Cây cọ ta</div>
+                          <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="item-price"><span class="item-price__discount">150.000 đ</span><span class="item-price__internal"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-small product-item card">
+                    <div class="row mr-0 ml-0">
+                      <div class="col-5 pr-0 pl-0">
+                        <div class="item-small__img"><a href="#"><img src="../../images/product-5.png" alt="Cây dứa nhỏ"/></a></div>
+                      </div>
+                      <div class="col-7">
+                        <div class="item__detail">
+                          <div class="item-name">Cây dứa nhỏ</div>
+                          <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="item-price"><span class="item-price__discount">375.000 đ</span><span class="item-price__internal"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-small product-item card">
+                    <div class="row mr-0 ml-0">
+                      <div class="col-5 pr-0 pl-0">
+                        <div class="item-small__img"><a href="#"><img src="../../images/product-6.png" alt="Cây đa búp đỏ"/></a></div>
+                      </div>
+                      <div class="col-7">
+                        <div class="item__detail">
+                          <div class="item-name">Cây đa búp đỏ</div>
+                          <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="item-price"><span class="item-price__discount">1.000.000 đ</span><span class="item-price__internal"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-12 col-md-8 col-lg-9">
+              <section class="promotion-product">
+                <section class="product-normal">
+                  <div class="product__title"> 
+                    <h2>Sản phẩm khuyến mại</h2>
+                    <div class="product__icon"> <a href=""> <i class="fas fa-chevron-left"></i></a><a href=""> <i class="fas fa-chevron-right"></i></a></div>
+                  </div>
+                  <div class="product__list--normal">
+                    <div class="item-normal product-item">
+                      <div class="item__img"><a href="#"><img src="../../images/product-1.png" alt="Cây chân chim"/></a>
+                        <div class="overlay">
+                          <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                        </div>
+                      </div>
+                      <div class="item-status">
+                        <div class="status-new">NEW</div>
+                      </div>
+                      <div class="item__detail">
+                        <div class="item-name">Cây chân chim</div>
+                        <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="item-price"><span class="item-price__discount">250.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                      </div>
+                    </div>
+                    <div class="item-normal product-item">
+                      <div class="item__img"><a href="#"><img src="../../images/product-2.png" alt="Cây Dạ Lam"/></a>
+                        <div class="overlay">
+                          <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                        </div>
+                      </div>
+                      <div class="item-status">
+                        <div class="status-percent">-50%</div>
+                      </div>
+                      <div class="item__detail">
+                        <div class="item-name">Cây Dạ Lam</div>
+                        <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="item-price"><span class="item-price__discount">500.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                      </div>
+                    </div>
+                    <div class="item-normal product-item">
+                      <div class="item__img"><a href="#"><img src="../../images/product-3.png" alt="Cây Danh Dự"/></a>
+                        <div class="overlay">
+                          <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                        </div>
+                      </div>
+                      <div class="item-status">
+                        <div class="status-new">NEW</div>
+                      </div>
+                      <div class="item__detail">
+                        <div class="item-name">Cây Danh Dự</div>
+                        <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="item-price"><span class="item-price__discount">850.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                      </div>
+                    </div>
+                    <div class="item-normal product-item">
+                      <div class="item__img"><a href="#"><img src="../../images/product-4.png" alt="Cây cọ ta"/></a>
+                        <div class="overlay">
+                          <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                        </div>
+                      </div>
+                      <div class="item-status">
+                      </div>
+                      <div class="item__detail">
+                        <div class="item-name">Cây cọ ta</div>
+                        <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="item-price"><span class="item-price__discount">150.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                      </div>
+                    </div>
+                    <div class="item-normal product-item">
+                      <div class="item__img"><a href="#"><img src="../../images/product-5.png" alt="Cây dứa nhỏ"/></a>
+                        <div class="overlay">
+                          <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                        </div>
+                      </div>
+                      <div class="item-status">
+                      </div>
+                      <div class="item__detail">
+                        <div class="item-name">Cây dứa nhỏ</div>
+                        <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="item-price"><span class="item-price__discount">375.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                      </div>
+                    </div>
+                    <div class="item-normal product-item">
+                      <div class="item__img"><a href="#"><img src="../../images/product-6.png" alt="Cây đa búp đỏ"/></a>
+                        <div class="overlay">
+                          <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                        </div>
+                      </div>
+                      <div class="item-status">
+                        <div class="status-percent">-50%</div>
+                      </div>
+                      <div class="item__detail">
+                        <div class="item-name">Cây đa búp đỏ</div>
+                        <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="item-price"><span class="item-price__discount">1.000.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner-product">
+        <div class="container"><img src="../../images/banner.png" alt="banner"></div>
+      </section>
+      <section class="new-product">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <section class="product-normal">
+                <div class="product__title"> 
+                  <h2>Sản phẩm mới</h2>
+                  <div class="product__icon"> <a href=""> <i class="fas fa-chevron-left"></i></a><a href=""> <i class="fas fa-chevron-right"></i></a></div>
+                </div>
+                <div class="product__list--normal">
+                  <div class="item-normal product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-1.png" alt="Cây chân chim"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                      <div class="status-new">NEW</div>
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây chân chim</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">250.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                  <div class="item-normal product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-2.png" alt="Cây Dạ Lam"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                      <div class="status-percent">-50%</div>
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây Dạ Lam</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">500.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                  <div class="item-normal product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-3.png" alt="Cây Danh Dự"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                      <div class="status-new">NEW</div>
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây Danh Dự</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">850.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                  <div class="item-normal product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-4.png" alt="Cây cọ ta"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây cọ ta</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">150.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                  <div class="item-normal product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-5.png" alt="Cây dứa nhỏ"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây dứa nhỏ</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">375.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                  <div class="item-normal product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-6.png" alt="Cây đa búp đỏ"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                      <div class="status-percent">-50%</div>
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây đa búp đỏ</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">1.000.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                  <div class="item-normal product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-1.png" alt="Cây chân chim"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                      <div class="status-new">NEW</div>
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây chân chim</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">250.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                  <div class="item-normal product-item">
+                    <div class="item__img"><a href="#"><img src="../../images/product-2.png" alt="Cây Dạ Lam"/></a>
+                      <div class="overlay">
+                        <div class="overlay-item"><a class="overlay-item__buys" href="">Mua Ngay</a><a class="overlay-item__search" href=""><i class="fas fa-search"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="item-status">
+                      <div class="status-percent">-50%</div>
+                    </div>
+                    <div class="item__detail">
+                      <div class="item-name">Cây Dạ Lam</div>
+                      <div class="item-rating"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="item-price"><span class="item-price__discount">500.000 đ</span><span class="item-price__internal">250.000 đ</span></div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news-product d-none d-lg-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="product__title">
+                <h2>Tin tức</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+              <div class="card news"><img class="card-img news-img" src="../../images/news-1.jpg" alt="15 thiết kế phòng ngủ tuyệt đẹp làm vạn người mê "/>
+                <div class="card-body news-content">
+                  <p class="news-content__date">Thứ 7 ,ngày 31, tháng 12, năm 2015</p>
+                  <h5 class="news-content__title card-title">15 thiết kế phòng ngủ tuyệt đẹp làm vạn người mê </h5>
+                  <p class="news-content__desc card-text">Cùng Sài Gòn Hoa tìm hiểu một vài xu hướng thiết kế sân vườn được ưa chuộng hiện nay nhé ! Kết hợp hàng rào</p><a class="news-content__btn" href="#">Đọc tiếp</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+              <div class="card news"><img class="card-img news-img" src="../../images/news-2.jpg" alt="Tạo Tiểu Cảnh Góc Sân Cho Nhà Phố, Biệt Thự Đẹp"/>
+                <div class="card-body news-content">
+                  <p class="news-content__date">Thứ 7 ,ngày 31, tháng 12, năm 2015</p>
+                  <h5 class="news-content__title card-title">Tạo Tiểu Cảnh Góc Sân Cho Nhà Phố, Biệt Thự Đẹp</h5>
+                  <p class="news-content__desc card-text">Khi bước từ ngoài ngõ vào hay từ trong nhà đi ra, góc sân luôn là điểm nhìn đầu tiên của chúng ta.</p><a class="news-content__btn" href="#">Đọc tiếp</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+              <div class="card news"><img class="card-img news-img" src="../../images/news-3.jpg" alt="Cách bố trí hoa chậu trước cửa ấn tượng"/>
+                <div class="card-body news-content">
+                  <p class="news-content__date">Thứ 7 ,ngày 31, tháng 12, năm 2015</p>
+                  <h5 class="news-content__title card-title">Cách bố trí hoa chậu trước cửa ấn tượng</h5>
+                  <p class="news-content__desc card-text">Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, phần không gian trước cửa</p><a class="news-content__btn" href="#">Đọc tiếp</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popup" role="alert">
+        <button class="close popup-close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <div class="alert fade show in popup-content p-5" role="alert">
+          <div class="row align-items-center">
+            <div class="col-5 d-none d-lg-block"><img src="../../images/popup.png" alt="alert"/></div>
+            <div class="col-12 col-lg-6">
+              <div class="popup-content__top">Nhận tin tức từ chúng tôi</div>
+              <div class="popup-content__title">ĐĂNG KÝ EMAIL NGAY HÔM NAY</div>
+              <div class="mt-4">
+                <form class="input-email">
+                  <input type="email" placeholder="Nhập email của bạn vào đây"/>
+                  <button class="input-email__icon"><i class="fab fa-telegram-plane icon-search"></i></button>
+                </form>
+              </div>
+              <div class="popup-content__desc mt-4">Đăng ký email ngay hôm nay để nhận các thông tin về sự kiện và các trương chình giảm giá từ chúng tôi</div>
+              <div class="form-check d-flex align-items-center mt-5">
+                <input class="form-check-input" id="flexCheckDefault" type="checkbox"/>
+                <label class="form-check-label ml-4" for="flexCheckDefault">Đăng ký nhận thông tin qua email</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-12 col-sm-12 col-md-5 col-lg-4">
+                <div class="footer-top__title">KÊNH THÔNG TIN TỪ CHÚNG TÔI :</div><a href="#"> <i class="fab fa-facebook-f"></i></a><a href="#"> <i class="fab fa-twitter"></i></a><a href="#"> <i class="fab fa-youtube"></i></a><a href="#"> <i class="fab fa-vimeo-v"></i></a>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="footer-top__title">Đăng ký nhận email từ chúng tôi</div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-4 col-lg-5">
+                <form class="input-email">
+                  <input type="email" placeholder="Nhập email của bạn vào đây"/>
+                  <button class="input-email__icon"><i class="fab fa-telegram-plane icon-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-mid">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-4"><a class="footer-mid__img" href="#"><img src="../../images/logo-footer.png" alt="logo-footer"></a>
+                <p>Green shop được thành lập từ 8/2010 được sự tin tưởng của khách hàng trong suốt thời gian hoạt động đến nay cửa hàng ngày một phát triển </p><a class="footer-mid__media" href="tel:`#{item.title}`"><i class="fas fa-mobile-alt"></i><span>Điện thoại : (84-4) 66.558.868</span></a><a class="footer-mid__media" href="tel:`#{item.title}`"><i class="far fa-envelope"></i><span>Email: info@dkt.com.vn</span></a>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-2">
+                <h5 class="footer-mid__left">Thông tin khách hàng</h5><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Tài khoản của tôi</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Sản phẩm yêu thích</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Lịch sử mua hàng</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Chính sách đổi trả</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Góp ý ,khiếu nại</span></a>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-2">
+                <h5 class="footer-mid__left">HỖ TRỢ DỊCH VỤ</h5><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Hệ thống cửa hàng</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Hướng dẫn mua hàng</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Hướng dẫn thanh toán</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Tích điểm đổi quà</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Câu hỏi thường gặp</span></a>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-2">
+                <h5 class="footer-mid__left">Chính sách ưu đãi</h5><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Chính sách giao hàng</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Chính sách đổi trả sản phẩm</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Chính sách bảo hành</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Giới thiệu sản phẩm mới</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Chính sách trả góp</span></a>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-2">
+                <h5 class="footer-mid__left">tin tức</h5><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Tin mới</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Khuyến mại</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Tuyển dụng</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Download</span></a><a class="footer-mid__info" href="#"><i class="fas fa-angle-right"></i><span>Tags</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="d-flex justify-content-between">
+              <div class="list-item"><a class="item" href="#">Sitemap</a><a class="item" href="#">Danh mục sản phẩm</a><a class="item" href="#">Hợp tác</a><a class="item" href="#">Thông tin liên hệ</a><a class="item" href="#">Câu hỏi thường gặp</a>
+              </div>
+              <div class="list-item"><a class="item" href="#"><i class="item-icon fab fa-cc-visa"></i></a><a class="item" href="#"><i class="item-icon fab fa-cc-paypal"></i></a><a class="item" href="#"><i class="item-icon fab fa-cc-mastercard"></i></a><a class="item" href="#"><i class="item-icon fab fa-cc-discover"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copy">
+          <p class="copy-item">Thiết kế  bởi Bizweb<i class="fas fa-copyright"></i></p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
