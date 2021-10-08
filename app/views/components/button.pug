@@ -1,0 +1,12 @@
+mixin button(url, name)
+    .item-control
+        a.btn.item-buy.mr-3(href= url)= name
+        a.btn.item-more.rounded-circle.mr-3(href="#") 
+            i.fas.fa-search
+        a.btn.item-more.rounded-circle.mr-3(href="#") 
+            i.fas.fa-heart
+mixin btnControl(name1, name2)
+    if name1
+        a(href="#").btn-control.style-control__1= name1
+    if name2
+        a(href="#").btn-control.style-control__2= name2

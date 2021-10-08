@@ -1,0 +1,44 @@
+footer.footer
+    .footer-top
+        .container
+            .row.justify-content-between.align-items-center
+                .col-12.col-sm-12.col-md-5.col-lg-4
+                    .footer-top__title= footerTopTitle1
+                    each item in mediaContact
+                        a(href="#") 
+                            i(class= item)
+                .col-12.col-sm-12.col-md-3.col-lg-3
+                    .footer-top__title= footerTopTitle2
+                .col-12.col-sm-12.col-md-4.col-lg-5
+                    +inputEmail("email", inputEmail)
+    .footer-mid
+        .container
+            .row
+                .col-12.col-lg-4
+                    a(href="#").footer-mid__img
+                        img(src="../../images/logo-footer.png", alt="logo-footer")
+                    p= footerMidContentLeft
+                    each item in footerMidIcon
+                        a(href="tel:`#{item.title}`").footer-mid__media
+                            i(class= item.icon)
+                            span= item.title
+                each item in footerMidLeft
+                    .col-sm-12.col-md-3.col-lg-2
+                        h5.footer-mid__left= item.title
+                        each icon in item.content
+                            a(href="#").footer-mid__info
+                                i(class= icon.icon)
+                                span= icon.name
+    .footer-bottom
+        .container
+            .d-flex.justify-content-between
+                .list-item
+                    each item in footerBottomLine1
+                        a.item(href="#")= item
+                .list-item
+                    each item in footerBottomLine2
+                        a.item(href="#")
+                            i.item-icon(class= item)
+    .footer-copy
+        p.copy-item= footerCopyTitle
+            i(class= footerCopyIcon)

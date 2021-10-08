@@ -1,0 +1,26 @@
+mixin productCategory(listCategory)
+    ul.product-category__list
+        each item in listCategory
+            li.product-category__item.py-3
+                a(href="#")
+                    i.fas.fa-chevron-right.mr-2
+                    span= item.name
+                    span.pl-1= item.quantity
+mixin color(listCategory)
+    ul.product-color__list
+        each item in listColor
+            li.product-color__item.py-3.w-50
+                a(href="#").d-flex.align-items-center
+                    span.color.rounded-circle.mr-2.d-inline-block(style="background:" + item.color)
+                    span.color-name= item.name
+mixin newsCategory(news)
+    each item in news
+        .news-sidebar.my-5
+            img(src= item.img, alt= titleHighlightNews).news-sidebar__img.mr-4
+            .news-sidebar__desc= item.desc
+mixin blogTag(tags)
+    each tag in tags
+        if tag.isActive
+            a(href="#").tag-item.active-tags= tag.name
+        else
+            a(href="#").tag-item= tag.name

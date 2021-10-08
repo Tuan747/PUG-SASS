@@ -1,0 +1,70 @@
+.featured-product {
+    margin-top: 60px;
+}
+
+.buys-product {
+    margin-top: 60px;
+
+    @include responsive(tablet) {
+        height: 83vh;
+    }
+
+    @include responsive(laptop) {
+        height: 110vh;
+    }
+}
+
+.promotion-product {
+    @include responsive(mobile) {
+        margin-top: 60px;
+    }
+}
+
+.banner-product {
+    margin-top: 60px;
+}
+
+.new-product {
+    margin-top: 60px;
+    .product-normal {
+        .product__list--normal {
+            @include d-grid(repeat(4, 1fr), 52% 52%, 30px);
+
+            @include responsive(mobile) {
+                @include d-grid(1fr, 100%, 0);
+            }
+        }
+    }
+}
+
+.news-product {
+    margin-top: 100px;
+
+    .news {
+        border: none;
+
+        &-content {
+            padding: 20px 0 0 0;
+            &__date {
+                @include text($font-size-m, $text-news-date);
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            &__title {
+                @include text($font-size-l, $main-color);
+                font-weight: 700;
+            }
+
+            &__desc {
+                @include text($font-size-m, $text-main-fading);
+            }
+
+            &__btn {
+                @include text($font-size-m, $main-color-fading);
+                font-weight: 400;
+                font-style: italic;
+            }
+        }
+    }
+}

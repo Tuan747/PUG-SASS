@@ -1,0 +1,25 @@
+section.featured-product
+    .container
+        .row
+            .col-12
+                +products(featuredProductTitle, featuredProduct, rating, "big")
+section.buys-product
+    .container
+        .row
+            .col-12.col-md-4.col-lg-3
+                +products(buysProductTitle, buysProduct, rating, "small")
+            .col-12.col-md-8.col-lg-9
+                section.promotion-product
+                    +products(promotionProductTitle, promotionProduct, rating, "normal")
+section.banner-product
+    .container
+        img(src="../../images/banner.png", alt="banner")
+section.new-product
+    .container
+        .row
+            .col-12
+                +products(newProductTitle, newProduct, rating, "normal")
+section.news-product.d-none.d-lg-block
+    .container
+        +news(newsProductTitle, newsProduct, readButton)
++popup()

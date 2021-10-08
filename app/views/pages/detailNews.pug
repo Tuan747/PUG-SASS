@@ -1,0 +1,41 @@
+section.list-product
+    .container
+        .row
+            .col-12
+                +pageChange(titleNews, "newsPage.html")
+        .row
+            .col-12.col-md-4.col-lg-3
+                .list-product__sidebar.mt-4
+                    .row
+                        .col-12
+                            .product__category.mb-5
+                                .product__title
+                                    h2= titleCategory
+                                +productCategory(listCategory)
+                        .col-12
+                            .product__category.mb-5
+                                .product__title
+                                    h2= titleHighlightNews
+                                +newsCategory(dataHighlightNews)
+                        .col-12
+                            .product__category.mb-5
+                                .product__title
+                                    h2= blogTag
+                                +blogTag(tagNews)
+            .col-12.col-md-8.col-lg-9
+                section.news
+                    each item in newsDataDetail
+                        h2.news-title.my-3= item.name
+                        .new-time.my-3
+                            each time in item.time
+                                span.new-time__item
+                                    i(class= time.icon)
+                                    span.ml-3= time.content
+                        img(src= item.images1, alt= item.name).my-3
+                        each desc in item.desc
+                            .news-desc.my-4= desc
+                        img(src= item.images2, alt= item.name).my-3
+                        each desc in item.desc
+                            .news-desc.my-4= desc
+        .row
+            +comment()

@@ -1,0 +1,94 @@
+mixin products(title, listProduct, rating, status)
+    case status
+        when "big"
+            section.product-big
+                .product__title
+                    h2= title
+                .product__list--big
+                    each item in listProduct
+                        .item-big.product-item
+                            .item__img
+                                a(href="#")
+                                    img(src= item.img, alt= item.name)
+                                .overlay
+                                    .overlay-item
+                                        a(href="").overlay-item__buys= buyButton
+                                        a(href="").overlay-item__search
+                                            i.fas.fa-search
+                            .item-status
+                                if item.status
+                                    .status-new= item.status
+                                if item.percent 
+                                    .status-percent= item.percent 
+                            .item__detail
+                                .item-name= item.name
+                                +rating(rating)
+                                +price(item.discount, item.internal)
+        when "small"
+            section.product-small
+                .product__title
+                    h2= title
+                    .product__icon.d-md-none.d-lg-none
+                        a(href="")  
+                            i.fas.fa-chevron-left
+                        a(href="") 
+                            i.fas.fa-chevron-right
+                ul.product__list--small
+                    each item in listProduct
+                        li.item-small.product-item.card
+                            .row.mr-0.ml-0
+                                .col-5.pr-0.pl-0
+                                    .item-small__img
+                                        a(href="#")
+                                            img(src= item.img, alt= item.name)
+                                .col-7
+                                    .item__detail
+                                        .item-name= item.name
+                                        +rating(rating)
+                                        +price(item.discount, "")
+        default
+            section.product-normal
+                .product__title 
+                    h2= title   
+                    .product__icon 
+                        a(href="")  
+                            i.fas.fa-chevron-left
+                        a(href="") 
+                            i.fas.fa-chevron-right
+                .product__list--normal
+                    each item in listProduct
+                        .item-normal.product-item
+                            .item__img
+                                a(href="#")
+                                    img(src= item.img, alt= item.name)
+                                .overlay
+                                    .overlay-item
+                                        a(href="").overlay-item__buys= buyButton
+                                        a(href="").overlay-item__search
+                                            i.fas.fa-search
+                            .item-status
+                                if item.status
+                                    .status-new= item.status
+                                if item.percent
+                                    .status-percent= item.percent 
+                            .item__detail
+                                .item-name= item.name
+                                +rating(rating)
+                                +price(item.discount, item.internal)
+mixin productTypeList(listGird, rating)
+    each item in listGird
+        .row.flex-row.mb-5
+            .col-12.col-lg-4
+                a(href="#")
+                    img(src= item.img, alt= item.name)
+            .col-12.col-lg-8.d-flex.align-items-center
+                .list-product__content 
+                    h2.item-name.mb-2= item.name
+                    .mb-2 
+                        +rating(rating)
+                    .item-desc.mb-2= item.desc
+                    .mb-2= item.price
+                        +price(item.internal, "")
+                    .mb-2
+                        +button(item.url, buyButton)
+

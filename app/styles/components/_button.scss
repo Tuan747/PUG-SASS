@@ -1,0 +1,70 @@
+.item-control {
+    @include d-flex(flex-start, center, none);
+
+    .item-buy {
+        @include text($font-size-m, $text-white);
+        background: $main-color;
+        border-radius: 20px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+            color: $main-color;
+            background: $bg-white;
+            border: 1px solid $main-color;
+        }
+    }
+
+    .item-more {
+        @include d-flex(center, center, none);
+        @include text($font-size-m, $text-black);
+        text-align: center;
+        border: 1px solid $border-product;
+        width: 30px;
+        height: 30px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+            color: $main-color;
+            background: $bg-white;
+            border: 1px solid $main-color;
+        }
+    }
+}
+
+.btn-control {
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+
+    @include responsive(mobile) {
+        padding: 5px 15px;
+    }
+}
+
+.style-control__1 {
+    @include text($font-size-m, $main-color);
+    border: 1px solid $main-color;
+    background: $bg-white;
+    margin-right: 20px;
+
+    @include responsive(mobile) {
+        font-size: $font-size-s;
+    }
+
+    &:hover {
+        color: $text-white;
+        background: $bg-color-main;
+    }
+}
+
+.style-control__2 {
+    @include text($font-size-m, $text-white);
+    background: $bg-color-main;
+
+    @include responsive(mobile) {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        color: $text-white;
+        background: $bg-main-hover-nav;
+    }
+}

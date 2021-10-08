@@ -1,0 +1,47 @@
+.btn-item {
+    padding: 5px 15px;
+    border-radius: 10px;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+
+    @include responsive(mobile) {
+        margin: 0 5px 5px 0;
+    }
+
+    @include responsive(tablet) {
+        margin-bottom: 5px;
+    }
+
+    &:hover {
+        background: $bg-color-hover !important;
+    }
+    i,
+    span {
+        color: $text-white;
+    }
+}
+.count-page {
+    @include d-flex(center, center, none);
+    position: relative;
+    margin: 0 10px;
+    min-width: 35px;
+    height: 100%;
+    border: 1px solid $border-color;
+
+    @include responsive(mobile) {
+        display: none !important;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: -6px;
+        min-width: 10px;
+        min-height: 10px;
+        transform: rotate(45deg);
+        border: 1px solid $border-white;
+        border-bottom-color: $border-color;
+        border-left-color: $border-color;
+        background: $border-white;
+    }
+}
